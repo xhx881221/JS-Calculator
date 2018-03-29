@@ -1,0 +1,82 @@
+body {
+    height: 100%;
+    background-color: #403d3b;
+  }
+  
+  /*将块置于正中间，采用将top，left，right，bottom置0，将margin设置为auto，将position设置为absolute的方法*/
+  #calculator {
+    width: 315px;
+    height: 460px;
+    background-color: #b5b1ae;
+    opacity: 0.8;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #screen {
+    height: 120px;
+    width: 315px;
+    color: black;
+    text-align: right;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 120px;
+    margin-right: 8px;
+  }
+  
+  #keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #calculator .button {
+    width: 72px;
+    height: 50px;
+    margin: 1.5px;  
+    vertical-align: bottom;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    line-height: 55px;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    cursor: default;
+  }
+  
+  #calculator .button:hover {
+    background-color: #b5b1ae;
+  }
+  
+  #calculator div .number {
+    background-color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  #calculator div .symbol {
+    font-size: 30px;
+    font-weight: 200;
+  }
+  
+  #calculator div .symbol:hover {
+    background-color: #0eb4ff;
+    opacity: 0.6;
+    color: white;
+  }
+  
+  #calculator #divide {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  #dot {
+    font-weight: bold;
+  }
